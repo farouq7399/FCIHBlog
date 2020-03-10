@@ -5,13 +5,13 @@
 $username="admin";
 $password="admin";
 
-session_start()
+session_start();
 if (isset($_SESSION['loggedin'])&& $_SESSION['loggedin']== true){
 
-header("location:hello.php")
+header("location:hello.php");
 
 }
-if (isset($_POST['username']) && isset($_POST['password']) {
+if (isset($_POST['username']) && isset($_POST['password'])) {
    if($_POST['username']==$username && $_POST['password']==$password)
    {
      $_SESSION['loggedin']=true;
